@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" 
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>CoursesView</servlet-name>
+        <servlet-class>view.CoursesView</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CoursesView</servlet-name>
+        <url-pattern>/Courses</url-pattern>
+    </servlet-mapping>
+    
+
+   
+     <servlet>
+        <servlet-name>ClassRepsView</servlet-name>
+        <servlet-class>view.ClassRepsView</servlet-class>
+    </servlet>
+       <servlet-mapping>
+        <servlet-name>ClassRepsView</servlet-name>
+        <url-pattern>/ClassRep</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>RegistryView</servlet-name>
+        <servlet-class>view.RegistryView</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>RegistryView</servlet-name>
+        <url-pattern>/Registry</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>StudentsView</servlet-name>
+        <servlet-class>view.StudentsView</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentsView</servlet-name>
+        <url-pattern>/Students</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>TuitionsView</servlet-name>
+        <servlet-class>view.TuitionsView</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TuitionsView</servlet-name>
+        <url-pattern>/Tuition</url-pattern>
+    </servlet-mapping>
+    
+    
+    <resource-ref>
+        <description>DB Connection</description>
+        <res-ref-name>jdbc/Registrar</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+</web-app>
